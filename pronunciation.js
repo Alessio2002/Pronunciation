@@ -32,13 +32,19 @@ const IonianAlphabetData = [
 ];
 
 const IonianDigraphData = [
-  { combination: "Ci + a/o/u", ipa: "[t͡ʃa], [t͡ʃo], [t͡ʃu]", notes: "Vowel insertion preserves the palatal affricate sound" },
-  { combination: "Gi + a/o/u", ipa: "[d͡ʒa], [d͡ʒo], [d͡ʒu]", notes: "Preserves the voiced palatal affricate sound" },
-  { combination: "Sci + a/o/u", ipa: "[ʃa], [ʃo], [ʃu]", notes: "Produces the postalveolar fricative sound" },
+  { combination: "Ci + a/o/u", ipa: "[t͡ʃa], [t͡ʃo], [t͡ʃu]", notes: "Vowel insertion preserves the voiceless postalveolar affricate sound" },
+  { combination: "Gi + a/o/u", ipa: "[d͡ʒa], [d͡ʒo], [d͡ʒu]", notes: "Vowel insertion preserves the voiced postalveolar affricate sound" },
+  { combination: "Sci + a/o/u", ipa: "[ʃa], [ʃo], [ʃu]", notes: "Vowel insertion preserves the voiceless postalveolar fricative" },
   { combination: "Sc", ipa: "[ʃ] / [k]", notes: "[ʃ] when positioned before i or e, otherwise [k]" },
   { combination: "Qi / Qe", ipa: "[ki] / [ke]", notes: "Hard palatal spelling rule replacing hard C sounds before front vowels (e or i)" },
   { combination: "Ghi / Ghe", ipa: "[gi] / [ge]", notes: "Maintains hard velar stops before front vowels (e or i)" },
   { combination: "Sqi / Sqe", ipa: "[ski] / [ske]", notes: "Preserves the unvoiced velar cluster" },
+  { combination: "Cì + a/o/u", ipa: "[t͡ʃja], [t͡ʃjo], [t͡ʃju]", notes: "Accented vowel adds an i sound between as in the word (yellow)" },
+  { combination: "Gì + a/o/u", ipa: "[d͡ʒja], [d͡ʒjo], [d͡ʒju]", notes: "Accented vowel adds an i sound between as in the word (yellow)" },
+  { combination: "Scì + a/o/u", ipa: "[ʃja], [ʃjo], [ʃju]", notes: "Accented vowel adds an i sound between as in the word (yellow)" },
+  { combination: "Cí + a/o/u", ipa: "['t͡ʃi.ja], ['t͡ʃi.jo], ['t͡ʃi.ju]", notes: "Accented vowel adds a stressed i sound between before ending in a glide an a vowel" },
+  { combination: "Gí + a/o/u", ipa: "['d͡ʒi.ja], ['d͡ʒi.jo], ['d͡ʒi.ju]", notes: "Accented vowel adds a stressed i sound between before ending in a glide an a vowel" },
+  { combination: "Scí + a/o/u", ipa: "['ʃi.ja], ['ʃi.jo], ['ʃi.ju]", notes: "Accented vowel adds a stressed i sound between before ending in a glide an a vowel" },
   { combination: "Ch", ipa: "[x]", notes: "Voiceless velar fricative digraph" },
   { combination: "Th", ipa: "[θ]", notes: "Voiceless dental fricative digraph" },
   { combination: "Zz / Z'", ipa: "[t͡s̺]", notes: "Medial double z or word-final z' map to the alveolar affricate" },
@@ -47,7 +53,7 @@ const IonianDigraphData = [
   { combination: "Gn", ipa: "[ɲ]", notes: "Palatal nasal consonant" },
   { combination: "Gl + i", ipa: "[ʎa], [ʎe], [ʎi], [ʎo], [ʎu]", notes: "Voiced palatal lateral approximant" },
   { combination: "Ll", ipa: "[l.l]", notes: "Doubled / Geminated L sound" },
-  { combination: "Tî / Tê", ipa: "[t͡ʃi] / [t͡ʃe]", notes: "Standard and central affrication marker; tê limited exclusively to word-final positions" }
+  { combination: "Tî / Tê", ipa: "[t͡ʃi] / [t͡ʃe]", notes: "Marks the historical Latin consonant clusters -ct-, -pt- and -tt- and their evolution into Ionian forms" }
 ];
 
 // DOM Targeting Elements
