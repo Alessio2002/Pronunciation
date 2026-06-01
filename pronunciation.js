@@ -81,7 +81,7 @@ function renderDigraphs() {
     digraphsView.innerHTML = IonianDigraphData.map(item => `
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-2 justify-center">
             <div class="flex items-center justify-between">
-                <span class="text-xl font-bold text-gray-800">${item.combination}</span>
+                <span class="text-3xl font-extrabold text-[#1a5695] w-8">${item.combination}</span>
                 <span class="ipa-badge text-sm px-3 py-1 rounded-md font-medium">${item.ipa}</span>
             </div>
             <p class="text-xs text-gray-500 mt-1">${item.notes}</p>
