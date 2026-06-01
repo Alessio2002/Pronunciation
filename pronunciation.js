@@ -85,7 +85,7 @@ function renderAlphabet() {
 // Build combination digraph blocks inside the digraphs container
 function renderDigraphs() {
     digraphsView.innerHTML = IonianDigraphData.map(item => `
-        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-3">
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-3 w-full max-w-md">
             <div class="flex items-center justify-between w-full">
                 <span class="text-2xl font-extrabold text-[#1a5695] whitespace-nowrap">${item.combination}</span>
                 <span class="ipa-badge text-sm px-3 py-1 rounded-md font-medium whitespace-nowrap">${item.ipa}</span>
