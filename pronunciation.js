@@ -71,7 +71,7 @@ function renderAlphabet() {
                 <span class="text-3xl font-extrabold text-[#1a5695] w-8">${item.letter}</span>
                 <span class="ipa-badge text-sm px-3 py-1 rounded-md font-medium">${item.ipa}</span>
             </div>
-            <p class="text-sm text-gray-500 text-right max-w-[60%] font-normal">${item.notes || 'Standard uniform value'}</p>
+            <p class="text-sm text-gray-500 text-right max-w-[60%] font-normal">${item.notes || ''}</p>
         </div>
     `).join('');
 }
@@ -86,7 +86,7 @@ function renderDigraphs() {
             </div>
             
             <p class="text-sm text-gray-500 font-normal mt-1 border-t border-gray-50 pt-2 w-full text-left">
-                ${item.notes || 'Standard uniform value'}
+                ${item.notes || ''}
             </p>
         </div>
     `).join('');
