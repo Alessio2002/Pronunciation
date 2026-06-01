@@ -79,12 +79,14 @@ function renderAlphabet() {
 // Build combination digraph blocks inside the digraphs container
 function renderDigraphs() {
     digraphsView.innerHTML = IonianDigraphData.map(item => `
-        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between gap-4">
-            <div class="flex items-center gap-4">
-                <span class="text-3xl font-extrabold text-[#1a5695] min-w-[5rem] whitespace-nowrap">${item.combination}</span>
-                <span class="ipa-badge text-sm px-3 py-1 rounded-md font-medium shrink-0">${item.ipa}</span>
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 grid grid-cols-[1.2fr_0.8fr_2fr] items-center gap-4">
+            <span class="text-3xl font-extrabold text-[#1a5695] whitespace-nowrap">${item.combination}</span>
+            
+            <div class="flex justify-start">
+                <span class="ipa-badge text-sm px-3 py-1 rounded-md font-medium whitespace-nowrap">${item.ipa}</span>
             </div>
-            <p class="text-sm text-gray-500 text-right max-w-[60%] font-normal">${item.notes || 'Standard uniform value'}</p>
+            
+            <p class="text-sm text-gray-500 text-right font-normal">${item.notes || 'Standard uniform value'}</p>
         </div>
     `).join('');
 }
