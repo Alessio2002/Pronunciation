@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupTabSwitching();
 });
 
-// Build individual letter blocks inside the view container
+// Build individual letter blocks inside the alphabet container
 function renderAlphabet() {
     alphabetView.innerHTML = IonianAlphabetData.map(item => `
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
@@ -73,7 +73,7 @@ function renderAlphabet() {
     `).join('');
 }
 
-// Build combination digraph blocks inside the view container
+// Build combination digraph blocks inside the digraphs container
 function renderDigraphs() {
     digraphsView.innerHTML = IonianDigraphData.map(item => `
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-2 justify-center">
@@ -86,14 +86,12 @@ function renderDigraphs() {
     `).join('');
 }
 
-// Tab Selector States Setup
+// Coordinate visibility logic and styling updates across interface tabs
 function setupTabSwitching() {
     btnAlphabet.addEventListener('click', () => {
-        // Toggle view visual state flags
         alphabetView.classList.remove('hidden');
         digraphsView.classList.add('hidden');
         
-        // Active visual stylings
         btnAlphabet.classList.add('tab-active');
         btnAlphabet.classList.remove('text-gray-500');
         btnDigraphs.classList.remove('tab-active');
@@ -101,11 +99,9 @@ function setupTabSwitching() {
     });
 
     btnDigraphs.addEventListener('click', () => {
-        // Toggle view visual state flags
         digraphsView.classList.remove('hidden');
         alphabetView.classList.add('hidden');
         
-        // Active visual stylings
         btnDigraphs.classList.add('tab-active');
         btnDigraphs.classList.remove('text-gray-500');
         btnAlphabet.classList.remove('tab-active');
