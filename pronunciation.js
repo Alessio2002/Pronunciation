@@ -11,7 +11,7 @@ const IonianAlphabetData = [
   { letter: "É", ipa: "[e]", notes: "Always closed and is explicitly marked" },
   { letter: "F", ipa: "[f]", notes: "" },
   { letter: "G", ipa: "[d͡ʒ] / [g]", notes: "[d͡ʒ] before i or e, otherwise [g]" },
-  { letter: "H", ipa: "(silent)", notes: "Maintains hard sound alignments in historical combinations" },
+  { letter: "H", ipa: "(silent)", notes: "Completely silent. Is used in historical spelling." },
   { letter: "I", ipa: "[i]", notes: "" },
   { letter: "J", ipa: "[j]", notes: "" },
   { letter: "L", ipa: "[l]", notes: "" },
