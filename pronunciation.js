@@ -45,7 +45,7 @@ const IonianDigraphData = [
   { combination: "Nc / Nq", ipa: "[ŋk]", notes: "Velar nasal distribution: nc before back vowels (a,o or u), nq before front vowels (e or i)" },
   { combination: "Ng / Ngh", ipa: "[ŋg]", notes: "Voiced velar nasal distribution: ng before back vowels (a,o or u), ngh before front vowels (e or i)" },
   { combination: "Gn", ipa: "[ɲ]", notes: "Palatal nasal consonant" },
-  { combination: "Gl + i-vowel", ipa: "[ʎa], [ʎe], [ʎi], [ʎo], [ʎu]", notes: "Voiced palatal lateral approximant" },
+  { combination: "Gl + i", ipa: "[ʎa], [ʎe], [ʎi], [ʎo], [ʎu]", notes: "Voiced palatal lateral approximant" },
   { combination: "Ll", ipa: "[l.l]", notes: "Doubled / Geminated L sound" },
   { combination: "Tî / Tê", ipa: "[t͡ʃi] / [t͡ʃe]", notes: "Standard and central affrication marker; tê limited exclusively to word-final positions" }
 ];
