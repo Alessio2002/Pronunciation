@@ -74,7 +74,7 @@ function renderAlphabet() {
     alphabetView.innerHTML = IonianAlphabetData.map(item => `
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
             <div class="flex items-center gap-4">
-                <span class="text-3xl font-extrabold text-[#1a5695] w-8">${item.letter}</span>
+                <span class="text-2xl font-extrabold text-[#1a5695] w-8">${item.letter}</span>
                 <span class="ipa-badge text-sm px-3 py-1 rounded-md font-medium">${item.ipa}</span>
             </div>
             <p class="text-sm text-gray-500 text-right max-w-[60%] font-normal">${item.notes || ''}</p>
@@ -87,7 +87,7 @@ function renderDigraphs() {
     digraphsView.innerHTML = IonianDigraphData.map(item => `
         <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-3">
             <div class="flex items-center justify-between w-full">
-                <span class="text-3xl font-extrabold text-[#1a5695] whitespace-nowrap">${item.combination}</span>
+                <span class="text-2xl font-extrabold text-[#1a5695] whitespace-nowrap">${item.combination}</span>
                 <span class="ipa-badge text-sm px-3 py-1 rounded-md font-medium whitespace-nowrap">${item.ipa}</span>
             </div>
             
