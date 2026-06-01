@@ -2,12 +2,13 @@
 
 // Datasets
 const IonianAlphabetData = [
-  { letter: "A", ipa: "[a]", notes: "Also [a:] (long)" },
+  { letter: "A", ipa: "[a]", notes: "" },
   { letter: "B", ipa: "[b]", notes: "" },
   { letter: "C", ipa: "[t͡ʃ] / [k]", notes: "[t͡ʃ] before i or e, otherwise [k]" },
   { letter: "D", ipa: "[d]", notes: "" },
-  { letter: "E", ipa: "[e] / [ɛ]", notes: "[e] closed, [ɛ] open (stressed or with grave marker È)" },
-  { letter: "É", ipa: "[e]", notes: "Always closed, appears unstressed or explicitly marked" },
+  { letter: "E", ipa: "[e] / [ɛ]", notes: "[e] closed, [ɛ] open (stressed)" },
+  { letter: "È", ipa: "[ɛ]", notes: "[ɛ] open (always open)" },
+  { letter: "É", ipa: "[e]", notes: "Always closed and is explicitly marked" },
   { letter: "F", ipa: "[f]", notes: "" },
   { letter: "G", ipa: "[d͡ʒ] / [g]", notes: "[d͡ʒ] before i or e, otherwise [g]" },
   { letter: "H", ipa: "(silent)", notes: "Maintains hard sound alignments in historical combinations" },
@@ -16,7 +17,8 @@ const IonianAlphabetData = [
   { letter: "L", ipa: "[l]", notes: "" },
   { letter: "M", ipa: "[m]", notes: "" },
   { letter: "N", ipa: "[n]", notes: "" },
-  { letter: "O", ipa: "[o] / [ɔ]", notes: "[o] closed, [ɔ] open (stressed or with grave marker Ò)" },
+  { letter: "O", ipa: "[o] / [ɔ]", notes: "[o] closed, [ɔ] open (stressed)" },
+  { letter: "Ò", ipa: "[ɔ]", notes: "[ɔ] open (always open)" },
   { letter: "P", ipa: "[p]", notes: "" },
   { letter: "Q", ipa: "[k] / [kw]", notes: "[k] before i or e; [kw] in Qu + Vowel combinations" },
   { letter: "R", ipa: "[r] / [ɾ]", notes: "[r] rolled; [ɾ] tapped between vowels, after a consonant, or following a word ending in a vowel" },
@@ -29,22 +31,22 @@ const IonianAlphabetData = [
 ];
 
 const IonianDigraphData = [
-  { combination: "ci + a/o/u", ipa: "[t͡ʃa], [t͡ʃo], [t͡ʃu]", notes: "Vowel insertion preserves the palatal affricate sound" },
-  { combination: "gi + a/o/u", ipa: "[d͡ʒa], [d͡ʒo], [d͡ʒu]", notes: "Preserves the voiced palatal affricate sound" },
-  { combination: "sci + a/o/u", ipa: "[ʃa], [ʃo], [ʃu]", notes: "Produces the postalveolar fricative sound" },
-  { combination: "sc", ipa: "[ʃ] / [k]", notes: "[ʃ] when positioned before i or e, otherwise [k]" },
+  { combination: "Ci + a/o/u", ipa: "[t͡ʃa], [t͡ʃo], [t͡ʃu]", notes: "Vowel insertion preserves the palatal affricate sound" },
+  { combination: "Gi + a/o/u", ipa: "[d͡ʒa], [d͡ʒo], [d͡ʒu]", notes: "Preserves the voiced palatal affricate sound" },
+  { combination: "Sci + a/o/u", ipa: "[ʃa], [ʃo], [ʃu]", notes: "Produces the postalveolar fricative sound" },
+  { combination: "Sc", ipa: "[ʃ] / [k]", notes: "[ʃ] when positioned before i or e, otherwise [k]" },
   { combination: "Qi / Qe", ipa: "[ki] / [ke]", notes: "Hard palatal spelling rule replacing hard C sounds before front vowels" },
   { combination: "Ghi / Ghe", ipa: "[gi] / [ge]", notes: "Maintains hard velar stops before front vowels" },
   { combination: "Sqi / Sqe", ipa: "[ski] / [ske]", notes: "Preserves the unvoiced velar cluster" },
-  { combination: "ch", ipa: "[x]", notes: "Voiceless velar fricative digraph" },
-  { combination: "th", ipa: "[θ]", notes: "Voiceless dental fricative digraph" },
-  { combination: "zz / z'", ipa: "[t͡s̺]", notes: "Medial double z or word-final z' map to the alveolar affricate" },
-  { combination: "nc / nq", ipa: "[ŋk]", notes: "Velar nasal distribution: nc before back vowels, nq before front vowels" },
-  { combination: "ng / ngh", ipa: "[ŋg]", notes: "Voiced velar nasal distribution: ng before back vowels, ngh before front vowels" },
-  { combination: "gn", ipa: "[ɲ]", notes: "Palatal nasal consonant" },
-  { combination: "gl + i-vowel", ipa: "[ʎa], [ʎe], [ʎi], [ʎo], [ʎu]", notes: "Palatal lateral approximant series" },
-  { combination: "ll", ipa: "[l.l]", notes: "Phonetically geminated dental lateral stop" },
-  { combination: "tî / tê", ipa: "[t͡ʃi] / [t͡ʃe]", notes: "Standard and central affrication marker; tê limited exclusively to word-final positions" }
+  { combination: "Ch", ipa: "[x]", notes: "Voiceless velar fricative digraph" },
+  { combination: "Th", ipa: "[θ]", notes: "Voiceless dental fricative digraph" },
+  { combination: "Zz / Z'", ipa: "[t͡s̺]", notes: "Medial double z or word-final z' map to the alveolar affricate" },
+  { combination: "Nc / Nq", ipa: "[ŋk]", notes: "Velar nasal distribution: nc before back vowels, nq before front vowels" },
+  { combination: "Ng / Ngh", ipa: "[ŋg]", notes: "Voiced velar nasal distribution: ng before back vowels - a,o or u -, ngh before front vowels - e or i -" },
+  { combination: "Gn", ipa: "[ɲ]", notes: "Palatal nasal consonant" },
+  { combination: "Gl + i-vowel", ipa: "[ʎa], [ʎe], [ʎi], [ʎo], [ʎu]", notes: "Voiced palatal lateral approximant" },
+  { combination: "Ll", ipa: "[l.l]", notes: "Doubled / Geminated L sound" },
+  { combination: "Tî / Tê", ipa: "[t͡ʃi] / [t͡ʃe]", notes: "Standard and central affrication marker; tê limited exclusively to word-final positions" }
 ];
 
 // DOM Targeting Elements
